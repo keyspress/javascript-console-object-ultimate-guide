@@ -1,8 +1,15 @@
 window.onload = function() {
-  console.log('console log 1');
-  console.log('console log 2');
-  console.log('console log 3');
-  console.log('console log 4');
-  console.log('console log 5');
-  console.clear();
+  var label = 'Function is called';
+  console.count(label);
+  console.count(label);
+
+  function foo() {
+    console.count(label);
+  }
+
+  foo();
+  foo();
+  foo();
+  foo();
+  foo();
 };
