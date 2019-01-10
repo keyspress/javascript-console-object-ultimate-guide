@@ -4,6 +4,10 @@ window.onload = function() {
     type: 'GET',
     success: function(response) {
       console.log(response);
+      console.assert(
+        response.per_page === 4,
+        '[Error]: item numbers per page is not true'
+      );
     }
   });
 };
