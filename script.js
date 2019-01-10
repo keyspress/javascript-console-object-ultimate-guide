@@ -1,13 +1,8 @@
 window.onload = function() {
-  $.ajax({
-    url: 'https://regres.in/api/users',
-    type: 'GET',
-    success: function(response) {
-      console.log(response);
-      console.assert(
-        response.per_page === 4,
-        '[Error]: item numbers per page is not true'
-      );
-    }
-  });
+  console.log('console log 1');
+  console.log('console log 2');
+  console.log('console log 3');
+  console.log('console log 4');
+  console.log('console log 5');
+  console.clear();
 };
