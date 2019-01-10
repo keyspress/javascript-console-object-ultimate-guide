@@ -1,3 +1,9 @@
 window.onload = function() {
-  console.dirxml(document.body);
+  $.ajax({
+    url: 'test.url.co.uk',
+    type: 'GET',
+    error: function(errorResponse) {
+      console.error(errorResponse.statusText);
+    }
+  });
 };
