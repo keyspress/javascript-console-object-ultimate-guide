@@ -1,7 +1,13 @@
 window.onload = function() {
-  console.time('for loop label');
-  for (var i = 0; i < 1000000; i++) {
-    var b = i * 5;
+  function firstFunc() {
+    secondFunc();
   }
-  console.timeEnd('for loop label');
+  function secondFunc() {
+    thirdFunc();
+  }
+  function thirdFunc() {
+    console.trace('test trace stack');
+  }
+
+  firstFunc();
 };
