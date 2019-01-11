@@ -1,4 +1,10 @@
 window.onload = function() {
-  // console.log('This is %d %s %d %s', 69, 'text', 23, 'more text');
-  console.log('%cThis is console.log()', 'font-size: 50px');
+  $.ajax({
+    url: 'https://regres.in/api/users?per_page=10',
+    type: GET,
+    success: function(response) {
+      var users = response.data;
+      console.table(users);
+    }
+  });
 };
