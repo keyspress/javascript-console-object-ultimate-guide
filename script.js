@@ -1,10 +1,7 @@
 window.onload = function() {
-  $.ajax({
-    url: 'https://regres.in/api/users?per_page=10',
-    type: GET,
-    success: function(response) {
-      var users = response.data;
-      console.table(users);
-    }
-  });
+  console.time('for loop label');
+  for (var i = 0; i < 1000000; i++) {
+    var b = i * 5;
+  }
+  console.timeEnd('for loop label');
 };
