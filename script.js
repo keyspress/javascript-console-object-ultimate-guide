@@ -1,4 +1,4 @@
 window.onload = function() {
-  console.info('This is console.info()');
-  console.log('This is console.log');
+  // console.log('This is %d %s %d %s', 69, 'text', 23, 'more text');
+  console.log('%cThis is console.log()', 'font-size: 50px');
 };
